@@ -91,6 +91,24 @@
       50% { transform: scale(1.2); }
       100% { transform: scale(1); }
     }
+
+    /* EFEITO DE CORAÇÕES */
+    .falling-heart {
+      position: fixed;
+      top: -50px;
+      font-size: 24px;
+      color: red;
+      animation: fall linear infinite;
+      pointer-events: none;
+      z-index: 1000;
+    }
+
+    @keyframes fall {
+      to {
+        transform: translateY(110vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
   </style>
 </head>
 <body>
@@ -147,5 +165,20 @@
     <p><strong>Para o amor da minha vida: Obrigado por me fazer tão feliz.</strong></p>
     <p><span class="heart">♥</span> 365 dias de amor... e isso é só o começo <span class="heart">♥</span></p>
   </footer>
+
+  <!-- JavaScript para criar os corações -->
+  <script>
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('falling-heart');
+      heart.textContent = '❤️';
+      heart.style.left = Math.random() * 100 + 'vw';
+      heart.style.animationDuration = (Math.random() * 2 + 3) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 5000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
 </body>
 </html>
