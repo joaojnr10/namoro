@@ -1,9 +1,13 @@
-Projeto: Namoro
+# Site de Namoro
 
+Projeto desenvolvido para prática de Front-End.
 
-Tecnologias:
-HTML
-CSS
-JavaScript
+## Tecnologias
+- HTML
+- CSS
 
-Descrição: Site Responsivo
+## Objetivo
+Treinar desenvolvimento web.
+
+## Autor
+João Carlos
