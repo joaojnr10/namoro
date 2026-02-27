@@ -5,7 +5,7 @@ Projeto desenvolvido para prática de Front-End.
 ## Tecnologias
 - HTML
 - CSS
--JavaScript
+- JavaScript
 
 ## Objetivo
 Treinar desenvolvimento web.
